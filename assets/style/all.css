@@ -98,11 +98,12 @@ img {
     white-space: nowrap; }
 
 .swiper-container {
-  position: relative; }
+  position: relative;
+  margin-top: 40px; }
   @media (max-width: 767px) {
     .swiper-container {
       display: none; } }
-  .swiper-container .banner {
+  .swiper-container .swiper-banner {
     padding: 40px; }
   .swiper-container .arrow {
     font-size: 36px;
@@ -150,6 +151,8 @@ img {
     display: none; }
     @media (max-width: 767px) {
       .card-group .title {
+        width: 100%;
+        text-align: center;
         display: block;
         color: #FF541C;
         font: normal normal bold 20px/28px "Lato", "Noto Sans TC", sans-serif; } }
@@ -518,6 +521,19 @@ img {
               -ms-transform: rotate(-180deg);
                   transform: rotate(-180deg); } }
 
+.banner {
+  display: none; }
+  @media (max-width: 767px) {
+    .banner {
+      display: block;
+      width: 100%;
+      padding-top: 60%;
+      background-image: url("../images/banner1.png");
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      top: 68px; } }
+
 .meal-group {
   width: 90%;
   margin: 40px auto 0; }
@@ -527,19 +543,51 @@ img {
   @media (max-width: 767px) {
     .meal-group {
       margin: 20px auto 0; } }
+  .meal-group .meal-pic {
+    position: relative; }
   .meal-group .meal-pic ~ .meal-pic {
-    margin-top: -120px; }
+    margin-top: -60px; }
     @media (max-width: 1024px) {
       .meal-group .meal-pic ~ .meal-pic {
-        margin-top: -80px; } }
+        margin-top: -30px; } }
     @media (max-width: 767px) {
       .meal-group .meal-pic ~ .meal-pic {
-        margin-top: -40px; } }
+        margin-top: 0px; } }
+  .meal-group .detail-group {
+    width: 100%;
+    position: absolute;
+    bottom: 8%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+    @media (max-width: 1024px) {
+      .meal-group .detail-group {
+        bottom: 5%; } }
+    @media (max-width: 767px) {
+      .meal-group .detail-group {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+  .meal-group .menu-detail,
+  .meal-group .order-detail {
+    color: #FF541C;
+    font: normal normal bold 36px/64px "Lato", "Noto Sans TC", sans-serif; }
+    @media (max-width: 1024px) {
+      .meal-group .menu-detail,
+      .meal-group .order-detail {
+        font: normal normal bold 32px/60px "Lato", "Noto Sans TC", sans-serif; } }
+    @media (max-width: 767px) {
+      .meal-group .menu-detail,
+      .meal-group .order-detail {
+        font: normal normal bold 20px/32px "Lato", "Noto Sans TC", sans-serif; } }
 
 .memo {
   width: 100%;
   margin: 5% 0 15%; }
-  @media (max-width: 1024px) {
+  @media (max-width: 767px) {
     .memo {
       margin: 10% 0 15%; } }
   .memo .title {
@@ -657,21 +705,5 @@ img {
           font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif; }
           .memo .item-group .item + .item {
             margin-top: 4px; } }
-
-.order-banner {
-  width: 100%;
-  padding-top: 40%;
-  background-image: url("../images/banner1.png");
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-  top: 88px; }
-  @media (max-width: 1024px) {
-    .order-banner {
-      padding-top: 50%; } }
-  @media (max-width: 767px) {
-    .order-banner {
-      padding-top: 60%;
-      top: 68px; } }
 
 /*# sourceMappingURL=all.css.map */
