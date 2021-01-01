@@ -1,7 +1,7 @@
 .memo {
     width: 100%;
     margin: 5% 0 15%;
-    @include pad {
+    @include mobile {
         margin: 10% 0 15%;
     }
     .title {

@@ -11,6 +11,8 @@
     .title {
         display: none;
         @include mobile {
+            width: 100%;
+            text-align: center;
             display: block;
             color: $color-primary;
             font: normal normal bold 20px/28px "Lato", "Noto Sans TC", sans-serif;
