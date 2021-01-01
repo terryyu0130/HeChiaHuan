@@ -1,0 +1,8 @@
+.db {
+    display: block;
+}
+.db-mb {
+    @include mobile {
+        display: block;
+    }
+}

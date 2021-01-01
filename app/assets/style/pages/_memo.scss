@@ -1,0 +1,132 @@
+.memo {
+    width: 100%;
+    margin: 5% 0 15%;
+    @include pad {
+        margin: 10% 0 15%;
+    }
+    .title {
+        font: normal normal bold 48px/72px "Lato", "Noto Sans TC", sans-serif;
+        @include pad {
+            text-align: center;
+            font: normal normal bold 44px/64px "Lato", "Noto Sans TC", sans-serif;
+        }
+        @include mobile {
+            font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
+    .special {
+        color: $color-warning;
+    }
+    .remind {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif;
+        @include mobile {
+            font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+            margin-top: $middle-md;
+        }
+    }
+    .program {
+        width: 100%;
+        margin: $middle-md 0;
+        @include mobile {
+            margin: $small 0 0 0;
+        }
+        &+.program {
+            margin-top: $middle;
+            @include mobile {
+                margin-top: $small;
+            }
+        }
+    }
+    .program-title {
+        color: $color-white;
+        padding: $small;
+        margin: $small 0;
+        font: normal normal bold 44px/64px "Lato", "Noto Sans TC", sans-serif;
+        background-color: $color-primary;
+        border-radius: $small-sm;
+        position: relative;
+        @include pad {
+            font: normal normal bold 40px/56px "Lato", "Noto Sans TC", sans-serif;
+        }
+        @include mobile {
+            margin: 0;
+            font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
+    .program-title-md {
+        @include pad {
+            padding: $middle-sm $small;
+            font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif;
+        }
+        @include mobile {
+            padding: $small;
+            font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+        }
+    }
+    .btn-program {
+        display: none;
+        transform: rotate(0deg);
+        @include mobile {
+            font-size: 28px;
+            position: absolute;
+            right: 5%;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+        &.active {
+            transform: rotate(-180deg);
+        }
+    }
+    .btn-mb {
+        @include mobile {
+            top: -30%;
+        }
+    }
+    .info-group {
+        padding-left: 32px;
+        @include mobile {
+            padding-left: $small;
+            display: none;
+        }
+        .info {
+            font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif;
+            margin-top: $small;
+            @include pad {
+                font: normal normal bold 28px/40px "Lato", "Noto Sans TC", sans-serif;
+                margin-top: $small-lg;
+            }
+            @include mobile {
+                font: normal normal bold 18px/28px "Lato", "Noto Sans TC", sans-serif;
+                margin-top: $small-md;
+            }
+        }
+    }
+    .item-group {
+        padding-left: 64px;
+        @include mobile {
+            padding-left: $middle-md;
+        }
+        .item {
+            color: $color-warning;
+            list-style: disc;
+            font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif;
+            &+.item {
+                margin-top: $small-md;
+            }
+            @include pad {
+                font: normal normal bold 20px/32px "Lato", "Noto Sans TC", sans-serif;
+            }
+            @include mobile {
+                font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif;
+                &+.item {
+                    margin-top: $small-sm;
+                }
+            }
+        }
+    }
+}
