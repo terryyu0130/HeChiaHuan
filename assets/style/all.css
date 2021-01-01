@@ -1,0 +1,677 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  position: relative; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 6.641%; }
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 5%; } }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 4%; } }
+
+.wrap {
+  position: relative;
+  top: 48px; }
+
+.db {
+  display: block; }
+
+@media (max-width: 767px) {
+  .db-mb {
+    display: block; } }
+
+.logo {
+  width: 96px;
+  height: 36px;
+  background-image: url("../images/logo.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.swiper-container {
+  position: relative; }
+  @media (max-width: 767px) {
+    .swiper-container {
+      display: none; } }
+  .swiper-container .banner {
+    padding: 40px; }
+  .swiper-container .arrow {
+    font-size: 36px;
+    color: #FF541C;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 90;
+    cursor: pointer; }
+    .swiper-container .arrow .swiper-button-next,
+    .swiper-container .arrow .swiper-button-prev {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      outline: none; }
+  .swiper-container .arrow-right {
+    right: 0; }
+  .swiper-container .arrow-left {
+    left: 0; }
+
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .card-group {
+      margin-top: 32px;
+      margin-bottom: 24px; } }
+  .card-group .title {
+    display: none; }
+    @media (max-width: 767px) {
+      .card-group .title {
+        display: block;
+        color: #FF541C;
+        font: normal normal bold 20px/28px "Lato", "Noto Sans TC", sans-serif; } }
+  .card-group .card {
+    width: 32%;
+    cursor: pointer; }
+    @media (max-width: 1024px) {
+      .card-group .card {
+        width: 49%; } }
+    @media (max-width: 767px) {
+      .card-group .card {
+        width: 100%; } }
+  .card-group .modal {
+    display: none; }
+  .card-group .card-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .card-group .content {
+    width: 70%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 5px solid #FF541C; }
+    @media (max-width: 1024px) {
+      .card-group .content {
+        width: 90%;
+        height: 40%; } }
+    @media (max-width: 767px) {
+      .card-group .content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 95%;
+        height: 80%;
+        position: relative; } }
+    .card-group .content .pic {
+      width: 50%; }
+      @media (max-width: 1024px) {
+        .card-group .content .pic {
+          width: 55%; } }
+      @media (max-width: 767px) {
+        .card-group .content .pic {
+          width: 100%;
+          height: 60%; } }
+      .card-group .content .pic img {
+        width: 100%;
+        height: 100%; }
+    .card-group .content .intro {
+      width: 50%;
+      padding: 16px;
+      background-color: #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 1024px) {
+        .card-group .content .intro {
+          width: 45%; } }
+      @media (max-width: 767px) {
+        .card-group .content .intro {
+          width: 100%;
+          height: 40%; } }
+    .card-group .content .close {
+      width: 100%;
+      font-size: 48px;
+      text-align: right; }
+      @media (max-width: 767px) {
+        .card-group .content .close {
+          position: absolute;
+          top: 1%;
+          right: 2.5%; } }
+    .card-group .content .star {
+      color: #ffea00;
+      font-size: 24px; }
+    .card-group .content .text {
+      color: #FF541C;
+      font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif; }
+    .card-group .content .material {
+      font: normal normal bold 24px/32px "Lato", "Noto Sans TC", sans-serif; }
+    .card-group .content .price {
+      text-align: right;
+      color: #FF541C;
+      font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; }
+      @media (max-width: 1024px) {
+        .card-group .content .price {
+          font: normal normal bold 30px/44px "Lato", "Noto Sans TC", sans-serif; } }
+    .card-group .content .s-price {
+      width: 100%;
+      text-align: right;
+      color: #FF541C;
+      font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; }
+      @media (max-width: 1024px) {
+        .card-group .content .s-price {
+          font: normal normal bold 24px/40px "Lato", "Noto Sans TC", sans-serif; } }
+      @media (max-width: 767px) {
+        .card-group .content .s-price {
+          font: normal normal bold 28px/44px "Lato", "Noto Sans TC", sans-serif; } }
+    .card-group .content .cold {
+      color: #48cae4; }
+    .card-group .content .freez {
+      color: #0466c8; }
+    .card-group .content .price-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .card-group .content .price-group .price + .price {
+        margin-left: 16px; }
+      @media (max-width: 1024px) {
+        .card-group .content .price-group .price {
+          font: normal normal bold 22px/36px "Lato", "Noto Sans TC", sans-serif; } }
+      @media (max-width: 767px) {
+        .card-group .content .price-group .price {
+          font: normal normal bold 28px/44px "Lato", "Noto Sans TC", sans-serif; } }
+    .card-group .content .text {
+      color: #FF541C;
+      font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif; }
+    .card-group .content .method,
+    .card-group .content .expiration {
+      font: normal normal bold 24px/32px "Lato", "Noto Sans TC", sans-serif; }
+      @media (max-width: 1024px) {
+        .card-group .content .method,
+        .card-group .content .expiration {
+          font: normal normal bold 20px/28px "Lato", "Noto Sans TC", sans-serif; } }
+
+.footer {
+  text-align: center;
+  margin-top: -80px; }
+  @media (max-width: 767px) {
+    .footer {
+      margin-top: -40px; } }
+  .footer .title {
+    color: #FF541C;
+    font: normal normal normal 24px/32px "Lato", "Noto Sans TC", sans-serif; }
+    @media (max-width: 767px) {
+      .footer .title {
+        font: normal normal normal 20px/28px "Lato", "Noto Sans TC", sans-serif; } }
+  .footer .group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer .icon-group {
+    width: 50%;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .footer .icon-group {
+        width: 100%; } }
+  .footer .phone-group {
+    width: 50%;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .footer .phone-group {
+        width: 100%;
+        margin-top: 28px; } }
+  .footer .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 24px; }
+    @media (max-width: 767px) {
+      .footer .list {
+        margin-top: 16px; } }
+  .footer .icon {
+    width: 12%; }
+    @media (max-width: 1024px) {
+      .footer .icon {
+        width: 16%; } }
+    @media (max-width: 767px) {
+      .footer .icon {
+        width: 25%; } }
+    .footer .icon + .icon {
+      margin-left: 36px; }
+  .footer .phone-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 36px; }
+    @media (max-width: 1024px) {
+      .footer .phone-content {
+        margin-top: 28px; } }
+    @media (max-width: 767px) {
+      .footer .phone-content {
+        margin-top: 16px; } }
+  .footer .fas {
+    font-size: 48px; }
+  .footer .number {
+    color: #121212;
+    font: normal normal normal 24px/32px "Lato", "Noto Sans TC", sans-serif;
+    margin-left: 24px; }
+  .footer .copyright {
+    font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif;
+    margin-top: 36px; }
+    @media (max-width: 767px) {
+      .footer .copyright {
+        font: normal normal normal 14px/21px "Lato", "Noto Sans TC", sans-serif; } }
+
+.header {
+  width: 1280px;
+  padding: 20px 6.641%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -640px;
+  z-index: 99; }
+  @media (max-width: 1024px) {
+    .header {
+      width: 100%;
+      padding: 20px 5%;
+      left: 0;
+      margin-left: 0px; } }
+  @media (max-width: 767px) {
+    .header {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 16px 5%; } }
+  .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 767px) {
+      .header .menu {
+        width: 100%;
+        position: absolute;
+        top: 68px;
+        display: none; } }
+  @media (max-width: 767px) {
+    .header .item {
+      width: 100%;
+      text-align: center;
+      background-color: #FF541C; } }
+  .header .item + .item {
+    margin-left: 24px; }
+    @media (max-width: 767px) {
+      .header .item + .item {
+        margin-left: 0; } }
+  .header .default {
+    display: block;
+    color: #FF541C;
+    padding: 8px 0;
+    font: normal normal normal 24px/32px "Lato", "Noto Sans TC", sans-serif;
+    position: relative;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    @media (max-width: 767px) {
+      .header .default {
+        color: #ffffff;
+        padding: 16px 0;
+        font: normal normal normal 20px/28px "Lato", "Noto Sans TC", sans-serif;
+        border-bottom: 1px solid #ffffff; } }
+    .header .default::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #FF541C;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    .header .default:hover {
+      -webkit-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+              transform: translateY(-5px); }
+      @media (max-width: 767px) {
+        .header .default:hover {
+          -webkit-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+                  transform: translateY(0px); } }
+      .header .default:hover::after {
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1); }
+        @media (max-width: 767px) {
+          .header .default:hover::after {
+            -webkit-transform: scale(0);
+                -ms-transform: scale(0);
+                    transform: scale(0); } }
+  .header .btn-arrow {
+    display: none; }
+    @media (max-width: 767px) {
+      .header .btn-arrow {
+        display: block;
+        color: #FF541C;
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .header .btn-arrow.active {
+          -webkit-transform: rotate(-180deg);
+              -ms-transform: rotate(-180deg);
+                  transform: rotate(-180deg); } }
+
+.meal-group {
+  width: 90%;
+  margin: 40px auto 0; }
+  @media (max-width: 1024px) {
+    .meal-group {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .meal-group {
+      margin: 20px auto 0; } }
+  .meal-group .meal-pic ~ .meal-pic {
+    margin-top: -120px; }
+    @media (max-width: 1024px) {
+      .meal-group .meal-pic ~ .meal-pic {
+        margin-top: -80px; } }
+    @media (max-width: 767px) {
+      .meal-group .meal-pic ~ .meal-pic {
+        margin-top: -40px; } }
+
+.memo {
+  width: 100%;
+  margin: 5% 0 15%; }
+  @media (max-width: 1024px) {
+    .memo {
+      margin: 10% 0 15%; } }
+  .memo .title {
+    font: normal normal bold 48px/72px "Lato", "Noto Sans TC", sans-serif; }
+    @media (max-width: 1024px) {
+      .memo .title {
+        text-align: center;
+        font: normal normal bold 44px/64px "Lato", "Noto Sans TC", sans-serif; } }
+    @media (max-width: 767px) {
+      .memo .title {
+        font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; } }
+  .memo .special {
+    color: #ff1c3b; }
+  .memo .remind {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; }
+    @media (max-width: 767px) {
+      .memo .remind {
+        font: normal normal bold 16px/24px "Lato", "Noto Sans TC", sans-serif;
+        margin-top: 24px; } }
+  .memo .program {
+    width: 100%;
+    margin: 24px 0; }
+    @media (max-width: 767px) {
+      .memo .program {
+        margin: 16px 0 0 0; } }
+    .memo .program + .program {
+      margin-top: 36px; }
+      @media (max-width: 767px) {
+        .memo .program + .program {
+          margin-top: 16px; } }
+  .memo .program-title {
+    color: #ffffff;
+    padding: 16px;
+    margin: 16px 0;
+    font: normal normal bold 44px/64px "Lato", "Noto Sans TC", sans-serif;
+    background-color: #FF541C;
+    border-radius: 4px;
+    position: relative; }
+    @media (max-width: 1024px) {
+      .memo .program-title {
+        font: normal normal bold 40px/56px "Lato", "Noto Sans TC", sans-serif; } }
+    @media (max-width: 767px) {
+      .memo .program-title {
+        margin: 0;
+        font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif; } }
+  @media (max-width: 1024px) {
+    .memo .program-title-md {
+      padding: 20px 16px;
+      font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; } }
+  @media (max-width: 767px) {
+    .memo .program-title-md {
+      padding: 16px;
+      font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif; } }
+  .memo .btn-program {
+    display: none;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
+    @media (max-width: 767px) {
+      .memo .btn-program {
+        font-size: 28px;
+        position: absolute;
+        right: 5%;
+        top: 0;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    .memo .btn-program.active {
+      -webkit-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+  @media (max-width: 767px) {
+    .memo .btn-mb {
+      top: -30%; } }
+  .memo .info-group {
+    padding-left: 32px; }
+    @media (max-width: 767px) {
+      .memo .info-group {
+        padding-left: 16px;
+        display: none; } }
+    .memo .info-group .info {
+      font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif;
+      margin-top: 16px; }
+      @media (max-width: 1024px) {
+        .memo .info-group .info {
+          font: normal normal bold 28px/40px "Lato", "Noto Sans TC", sans-serif;
+          margin-top: 12px; } }
+      @media (max-width: 767px) {
+        .memo .info-group .info {
+          font: normal normal bold 18px/28px "Lato", "Noto Sans TC", sans-serif;
+          margin-top: 8px; } }
+  .memo .item-group {
+    padding-left: 64px; }
+    @media (max-width: 767px) {
+      .memo .item-group {
+        padding-left: 24px; } }
+    .memo .item-group .item {
+      color: #ff1c3b;
+      list-style: disc;
+      font: normal normal bold 24px/36px "Lato", "Noto Sans TC", sans-serif; }
+      .memo .item-group .item + .item {
+        margin-top: 8px; }
+      @media (max-width: 1024px) {
+        .memo .item-group .item {
+          font: normal normal bold 20px/32px "Lato", "Noto Sans TC", sans-serif; } }
+      @media (max-width: 767px) {
+        .memo .item-group .item {
+          font: normal normal bold 14px/21px "Lato", "Noto Sans TC", sans-serif; }
+          .memo .item-group .item + .item {
+            margin-top: 4px; } }
+
+.order-banner {
+  width: 100%;
+  padding-top: 40%;
+  background-image: url("../images/banner1.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  top: 88px; }
+  @media (max-width: 1024px) {
+    .order-banner {
+      padding-top: 50%; } }
+  @media (max-width: 767px) {
+    .order-banner {
+      padding-top: 60%;
+      top: 68px; } }
+
+/*# sourceMappingURL=all.css.map */
