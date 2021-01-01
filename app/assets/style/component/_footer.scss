@@ -1,9 +1,9 @@
 //footer
 .footer {
     text-align: center;
-    margin-top: -80px;
+    margin-top: 0px;
     @include mobile {
-        margin-top: -40px;
+        margin-top: $small;
     }
     .title  {
         color: $color-primary;
