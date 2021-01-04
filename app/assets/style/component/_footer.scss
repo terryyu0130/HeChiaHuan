@@ -5,13 +5,18 @@
     @include mobile {
         margin-top: $small;
     }
-    .title  {
-        width: 40%;
+    .title {
+        width: 50%;
         margin: 0 auto;
         padding-top: 10%;
-        background-image: url('../images/title/footer_1.png');
         background-position: center center;
         background-size: cover;
+    }
+    .title1 {
+        background-image: url('../images/title/footer_1.png');
+    }
+    .title2 {
+        background-image: url('../images/title/footer_2.png');
     }
     .group {
         display: flex;
