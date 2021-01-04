@@ -311,12 +311,15 @@ img {
     .footer {
       margin-top: 16px; } }
   .footer .title {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     padding-top: 10%;
-    background-image: url("../images/title/footer_1.png");
     background-position: center center;
     background-size: cover; }
+  .footer .title1 {
+    background-image: url("../images/title/footer_1.png"); }
+  .footer .title2 {
+    background-image: url("../images/title/footer_2.png"); }
   .footer .group {
     display: -webkit-box;
     display: -ms-flexbox;
