@@ -107,7 +107,7 @@ img {
     padding: 40px; }
   .swiper-container .arrow {
     font-size: 36px;
-    color: #FF541C;
+    color: #FC652D;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -141,8 +141,7 @@ img {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 80px; }
+          justify-content: space-between; }
   @media (max-width: 767px) {
     .card-group {
       margin-top: 32px;
@@ -154,7 +153,7 @@ img {
         width: 100%;
         text-align: center;
         display: block;
-        color: #FF541C;
+        color: #FC652D;
         font: normal normal bold 20px/28px "Lato", "Noto Sans TC", sans-serif; } }
   .card-group .card {
     width: 32%;
@@ -193,7 +192,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    border: 5px solid #FF541C; }
+    border: 5px solid #FC652D; }
     @media (max-width: 1024px) {
       .card-group .content {
         width: 90%;
@@ -253,13 +252,13 @@ img {
       color: #ffea00;
       font-size: 24px; }
     .card-group .content .text {
-      color: #FF541C;
+      color: #FC652D;
       font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif; }
     .card-group .content .material {
       font: normal normal bold 24px/32px "Lato", "Noto Sans TC", sans-serif; }
     .card-group .content .price {
       text-align: right;
-      color: #FF541C;
+      color: #FC652D;
       font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; }
       @media (max-width: 1024px) {
         .card-group .content .price {
@@ -267,7 +266,7 @@ img {
     .card-group .content .s-price {
       width: 100%;
       text-align: right;
-      color: #FF541C;
+      color: #FC652D;
       font: normal normal bold 32px/48px "Lato", "Noto Sans TC", sans-serif; }
       @media (max-width: 1024px) {
         .card-group .content .s-price {
@@ -295,7 +294,7 @@ img {
         .card-group .content .price-group .price {
           font: normal normal bold 28px/44px "Lato", "Noto Sans TC", sans-serif; } }
     .card-group .content .text {
-      color: #FF541C;
+      color: #FC652D;
       font: normal normal normal 16px/24px "Lato", "Noto Sans TC", sans-serif; }
     .card-group .content .method,
     .card-group .content .expiration {
@@ -312,11 +311,12 @@ img {
     .footer {
       margin-top: 16px; } }
   .footer .title {
-    color: #FF541C;
-    font: normal normal normal 24px/32px "Lato", "Noto Sans TC", sans-serif; }
-    @media (max-width: 767px) {
-      .footer .title {
-        font: normal normal normal 20px/28px "Lato", "Noto Sans TC", sans-serif; } }
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 10%;
+    background-image: url("../images/title/footer_1.png");
+    background-position: center center;
+    background-size: cover; }
   .footer .group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -424,9 +424,13 @@ img {
               justify-content: center;
       padding: 16px 5%; } }
   .header .menu {
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -438,73 +442,73 @@ img {
         position: absolute;
         top: 68px;
         display: none; } }
-  @media (max-width: 767px) {
-    .header .item {
-      width: 100%;
-      text-align: center;
-      background-color: #FF541C; } }
-  .header .item + .item {
-    margin-left: 24px; }
+  .header .item {
+    width: 33%; }
     @media (max-width: 767px) {
-      .header .item + .item {
-        margin-left: 0; } }
+      .header .item {
+        width: 100%;
+        text-align: center;
+        background-color: #FC652D; } }
   .header .default {
     display: block;
-    color: #FF541C;
-    padding: 8px 0;
-    font: normal normal normal 24px/32px "Lato", "Noto Sans TC", sans-serif;
+    padding-top: 15%;
+    background-position: center center;
+    background-size: cover;
     position: relative;
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
     @media (max-width: 767px) {
       .header .default {
-        color: #ffffff;
-        padding: 16px 0;
-        font: normal normal normal 20px/28px "Lato", "Noto Sans TC", sans-serif;
+        background-size: 60%;
+        background-repeat: no-repeat;
         border-bottom: 1px solid #ffffff; } }
     .header .default::after {
       content: "";
-      width: 100%;
-      height: 2px;
-      background-color: #FF541C;
+      width: 80%;
+      height: 3px;
+      background-color: #FC652D;
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
+      margin: 0 auto;
+      bottom: -10px;
       -webkit-transform: scale(0);
           -ms-transform: scale(0);
               transform: scale(0);
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-    .header .default:hover {
-      -webkit-transform: translateY(-5px);
-          -ms-transform: translateY(-5px);
-              transform: translateY(-5px); }
+    .header .default:hover::after {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
       @media (max-width: 767px) {
-        .header .default:hover {
-          -webkit-transform: translateY(0px);
-              -ms-transform: translateY(0px);
-                  transform: translateY(0px); } }
-      .header .default:hover::after {
-        -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-                transform: scale(1); }
-        @media (max-width: 767px) {
-          .header .default:hover::after {
-            -webkit-transform: scale(0);
-                -ms-transform: scale(0);
-                    transform: scale(0); } }
+        .header .default:hover::after {
+          -webkit-transform: scale(0);
+              -ms-transform: scale(0);
+                  transform: scale(0); } }
+  .header .default1 {
+    background-image: url("../images/title/header_1.png"); }
+    @media (max-width: 767px) {
+      .header .default1 {
+        background-image: url("../images/title/header_mb_1.png"); } }
+  .header .default2 {
+    background-image: url("../images/title/header_2.png"); }
+    @media (max-width: 767px) {
+      .header .default2 {
+        background-image: url("../images/title/header_mb_2.png"); } }
+  .header .default3 {
+    background-image: url("../images/title/header_3.png"); }
+    @media (max-width: 767px) {
+      .header .default3 {
+        background-image: url("../images/title/header_mb_3.png"); } }
   .header .btn-arrow {
     display: none; }
     @media (max-width: 767px) {
       .header .btn-arrow {
         display: block;
-        color: #FF541C;
+        color: #FC652D;
         font-size: 18px;
         position: absolute;
         top: 0;
@@ -578,7 +582,7 @@ img {
                 justify-content: space-between; } }
   .meal-group .menu-detail,
   .meal-group .order-detail {
-    color: #FF541C;
+    color: #FC652D;
     font: normal normal bold 36px/64px "Lato", "Noto Sans TC", sans-serif; }
     @media (max-width: 1024px) {
       .meal-group .menu-detail,
@@ -591,7 +595,7 @@ img {
 
 .memo {
   width: 100%;
-  margin: 5% 0 15%; }
+  margin: 5% 0; }
   @media (max-width: 767px) {
     .memo {
       margin: 10% 0 15%; } }
@@ -631,7 +635,7 @@ img {
     padding: 16px;
     margin: 16px 0;
     font: normal normal bold 44px/64px "Lato", "Noto Sans TC", sans-serif;
-    background-color: #FF541C;
+    background-color: #FC652D;
     border-radius: 4px;
     position: relative; }
     @media (max-width: 1024px) {
