@@ -6,11 +6,12 @@
         margin-top: $small;
     }
     .title  {
-        color: $color-primary;
-        font: normal normal normal 24px/32px "Lato", "Noto Sans TC", sans-serif;
-        @include mobile {
-            font: normal normal normal 20px/28px "Lato", "Noto Sans TC", sans-serif;
-        }
+        width: 40%;
+        margin: 0 auto;
+        padding-top: 10%;
+        background-image: url('../images/title/footer_1.png');
+        background-position: center center;
+        background-size: cover;
     }
     .group {
         display: flex;

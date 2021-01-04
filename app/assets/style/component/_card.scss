@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
     @include mobile {
         margin-top: 32px;
         margin-bottom: $middle-md;
